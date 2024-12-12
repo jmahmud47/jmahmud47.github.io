@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle:
 
 profile:
   align: right
@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Junayed Mahmud is a Ph.D. student in Computer Science at <a href="https://www.cs.ucf.edu">University of Central Florida</a>. He works at the <a href="https://sagelab.io">SAGE Research Lab</a>, advised by <a href="https://www.kpmoran.com">Dr. Kevin Moran</a>. Junayed graduated with his M.S. in Computer Science from <a href="https://www.gmu.edu">George Mason University, USA</a> in 2023 and B.S. in Computer Science and Engineering from <a href="https://www.iutoic-dhaka.edu">Islamic University of Technology, Bangladesh</a> in 2016. He worked at <a href="https://research.samsung.com/srbd">Samsung R&D Institute Bangladesh Limited</a> before starting his Ph.D. His primary research interests include Bug Reporting, NLP for Software Engineering, and Automated Mobile Testing. He currently works on reporting software bugs properly and improving the quality of bug reports to aid in software maintenance. He also researches improving automated software documentation using the information available from source code and graphical user interfaces.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 

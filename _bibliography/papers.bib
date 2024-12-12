@@ -3,113 +3,176 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{saha2024toward,
+title={Toward the Automated Localization of Buggy Mobile App UIs from Bug Descriptions},
+author={Saha, Antu and Song, Yang and Mahmud, Junayed and Zhou, Ying and Moran, Kevin and Chaparro, Oscar},
+abstract={Bug report management is a costly software maintenance process comprised of several challenging tasks. Given the UI-driven nature of mobile apps, bugs typically manifest through the UI, hence the identification of buggy UI screens and UI components (Buggy UI Localization) is important to localizing the buggy behavior and eventually fixing it. However, this task is challenging as developers must reason about bug descriptions (which are often low-quality), and the visual or code-based representations of UI screens.
+This paper is the first to investigate the feasibility of automating the task of Buggy UI Localization through a comprehensive study that evaluates the capabilities of one textual and two multi-modal deep learning (DL) techniques and one textual unsupervised technique. We evaluate such techniques at two levels of granularity, Buggy UI Screen and UI Component localization. Our results illustrate the individual strengths of models that make use of different representations, wherein models that incorporate visual information perform better for UI screen localization, and models that operate on textual screen information perform better for UI component localization -- highlighting the need for a localization approach that blends the benefits of both types of techniques. Furthermore, we study whether Buggy UI Localization can improve traditional buggy code localization, and find that incorporating localized buggy UIs leads to improvements of 9%-12% in Hits@10.},
+booktitle={Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA'24)},
+pages={1249--1261},
+year={2024},
+location = {Vienna, Austria},
+preview={issta2024_logo.png},
+pdf={https://arxiv.org/abs/2408.04075},
+code={https://zenodo.org/records/12692994}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{Mahmud:ICSE2024,
+author = {Mahmud, Junayed and De Silva, Nadeeshan and Khan, Safwat Ali and Mostafavi, Seyed Hooman and Mansur, S M Hasan and Chaparro, Oscar and Marcus, Andrian (Andi) and Moran, Kevin},
+abstract = {One of the most important tasks related to managing bug reports is localizing the fault so that a fix can be applied. As such, prior work has aimed to automate this task of bug localization by formulating it as an information retrieval problem, where potentially buggy files are retrieved and ranked according to their textual similarity with a given bug report. However, there is often a notable semantic gap between the information contained in bug reports and identifiers or natural language contained within source code files. For user-facing software, there is currently a key source of information that could aid in bug localization, but has not been thoroughly investigated - information from the GUI.
+We investigate the hypothesis that, for end user-facing applications, connecting information in a bug report with information from the GUI, and using this to aid in retrieving potentially buggy files, can improve upon existing techniques for bug localization. To examine this phenomenon, we conduct a comprehensive empirical study that augments four baseline techniques for bug localization with GUI interaction information from a reproduction scenario to (i) filter out potentially irrelevant files, (ii) boost potentially relevant files, and (iii) reformulate text-retrieval queries. To carry out our study, we source the current largest dataset of fully-localized and reproducible real bugs for Android apps, with corresponding bug reports, consisting of 80 bug reports from 39 popular open-source apps. Our results illustrate that augmenting traditional techniques with GUI information leads to a marked increase in effectiveness across multiple metrics, including a relative increase in Hits@10 of 13-18%. Additionally, through further analysis, we find that our studied augmentations largely complement existing techniques.},
+title = {On Using GUI Interaction Data to Improve Text Retrieval-based Bug Localization},
+year = {2024},
+booktitle = {Proceedings of the 46th IEEE/ACM International Conference on Software Engineering (ICSE'24)},
+keywords = {bug localization, GUI, natural language processing, mobile apps},
+location = {Lisbon, Portugal},
+preview={icse2024_logo.png},
+pdf={https://arxiv.org/abs/2310.08083},
+code={https://github.com/SageSELab/UI-Bug-Localization-Study}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{mahmud2024doctoral,
+title={Toward Rapid Bug Resolution for Android Apps},
+author={Mahmud, Junayed},
+abstract={Bug reports document unexpected behaviors in software, enabling developers to understand, validate, and fix bugs. Unfortunately, a significant portion of bug reports is of low quality, which poses challenges for developers in terms of addressing these issues. Prior research has delved into the information needed for documenting high-quality bug reports and expediting bug report management. Furthermore, researchers have explored the challenges associated with bug report management and proposed various automated techniques. Nevertheless, these techniques exhibit several limitations, including a lexical gap between developers and reporters, difficulties in bug reproduction, and identifying bug locations. Therefore, there is a pressing need for additional efforts to effectively manage bug reports and enhance the quality of both desktop and mobile applications. In this paper, we describe the existing limitations of bug reports and identify potential strategies for addressing them. Our vision encompasses a future where the alleviation of these limitations and successful execution of our proposed new research directions can benefit both reporters and developers, ultimately making the entire software maintenance faster.},
+year = {2024},
+booktitle = {Proceedings of the 46th IEEE/ACM International Conference on Software Engineering (ICSE'24), Doctoral Symposium Track},
+keywords = {bug localization, GUI, natural language processing, mobile apps},
+location = {Lisbon, Portugal},
+preview={icse2024_logo.png},
+pdf={https://arxiv.org/abs/2310.08083},
+code={https://github.com/SageSELab/UI-Bug-Localization-Study}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@inproceedings{Baral2024,
+author = {Baral, Kesina and Johnson, John and Mahmud, Junayed and Salma, Sabiha and Fazzini, Mattia and Rubin, Julia and Offutt, Jeff and Moran, Kevin},
+title = {Automating GUI-based Test Oracles for Mobile Apps},
+year = {2024},
+isbn = {9798400705878},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3643991.3644930},
+doi = {10.1145/3643991.3644930},
+abstract = {In automated testing, test oracles are used to determine whether software behaves correctly on individual tests by comparing expected behavior with actual behavior, revealing incorrect behavior. Automatically creating test oracles is a challenging task, especially in domains where software behavior is difficult to model. Mobile apps are one such domain, primarily due to their event-driven, GUI-based nature, coupled with significant ecosystem fragmentation. This paper takes a step toward automating the construction of GUI-based test oracles for mobile apps, first by characterizing common behaviors associated with failures into a behavioral taxonomy, and second by using this taxonomy to create automated oracles. Our taxonomy identifies and categorizes common GUI element behaviors, expected app responses, and failures from 124 reproducible bug reports, which allow us to better understand oracle characteristics. We use the taxonomy to create app-independent oracles and report on their generalizability by analyzing an additional dataset of 603 bug reports. We also use this taxonomy to define an app-independent process for creating automated test oracles, which leverages computer vision and natural language processing, and apply our process to automate five types of app-independent oracles. We perform a case study to assess the effectiveness of our automated oracles by exposing them to 15 real-world failures. The oracles reveal 11 of the 15 failures and report only one false positive. Additionally, we combine our oracles with a recent automated test input generation tool for Android, revealing two bugs with a low false positive rate. Our results can help developers create stronger automated tests that can reveal more problems in mobile apps and help researchers who can use the understanding from the taxonomy to make further advances in test automation.},
+booktitle = {Proceedings of the 21st International Conference on Mining Software Repositories (MSR'24)},
+pages = {309–321},
+numpages = {13},
+keywords = {mobile apps, test oracles, software testing, UI analysis},
+location = {Lisbon, Portugal},
+series = {MSR '24},
+preview={msr2024_logo.png},
+pdf={https://dl.acm.org/doi/10.1145/3643991.3644930},
+code={https://github.com/SageSELab/Magneto}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@INPROCEEDINGS{song2023burt,
+author={Song, Yang and Mahmud, Junayed and De Silva, Nadeeshan and Zhou, Ying and Chaparro, Oscar and Moran, Kevin and Marcus, Andrian and Poshyvanyk, Denys},
+abstract={This paper introduces BURT, a web-based chatbot for interactive reporting of Android app bugs. BURT is designed to assist Android app end-users in reporting high-quality defect information using an interactive interface. BURT guides the users in reporting essential bug report elements, i.e., the observed behavior, expected behavior, and the steps to reproduce the bug. It verifies the quality of the text written by the user and provides instant feedback. In addition, BURT provides graphical suggestions that the users can choose as alternatives to textual descriptions. We empirically evaluated BURT, asking end-users to report bugs from six Android apps. The reporters found that BURT's guidance and automated suggestions and clarifications are useful and BURT is easy to use.},
+booktitle={Proceedings of the 45th  IEEE/ACM International Conference on Software Engineering (ICSE'23), Formal Tool Demonstrations Track}, 
+title={BURT: A Chatbot for Interactive Bug Reporting}, 
+year={2023},
+pages={170-174},
+location = {Melbourne, Australia},
+preview={icse2023_logo.png},
+pdf={https://arxiv.org/abs/2302.06050},
+code={https://github.com/sea-lab-wm/burt/tree/tool-demo},
+video={https://www.youtube.com/watch?v=SyfOXpHYGRo&feature=youtu.be},
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{song_toward_2022,
+  title        = {Toward interactive bug reporting for ({Android} app) end-users},
+  author       = {Song, Yang and Mahmud, Junayed and Zhou, Ying and Chaparro, Oscar and Moran, Kevin and Marcus, Andrian and Poshyvanyk, Denys},
+  abstract = {Many software bugs are reported manually, particularly bugs that manifest themselves visually in the user interface. End-users typically report these bugs via app reviewing websites, issue trackers, or in-app built-in bug reporting tools, if available. While these systems have various features that facilitate bug reporting (e.g., textual templates or forms), they often provide limited guidance, concrete feedback, or quality verification to end-users, who are often inexperienced at reporting bugs and submit low-quality bug reports that lead to excessive developer effort in bug report management tasks. We propose an interactive bug reporting system for end-users (Burt), implemented as a task-oriented chatbot. Unlike existing bug reporting systems, Burt provides guided reporting of essential bug report elements (i.e., the observed behavior, expected behavior, and steps to reproduce the bug), instant quality verification, and graphical suggestions for these elements. We implemented a version of Burt for Android and conducted an empirical evaluation study with end-users, who reported 12 bugs from six Android apps studied in prior work. The reporters found that Burt's guidance and automated suggestions/clarifications are useful and Burt is easy to use. We found that Burt reports contain higher-quality information than reports collected via a template-based bug reporting system. Improvements to Burt, informed by the reporters, include support for various wordings to describe bug report elements and improved quality verification. Our work marks an important paradigm shift from static to interactive bug reporting for end-users.},
+  year         = 2022,
+  location = {Singapore},
+  booktitle    = {Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE'22)},
+  preview={fse2022_logo.png},
+  pdf={https://arxiv.org/abs/2209.10062},
+  code={https://github.com/sea-lab-wm/burt}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@INPROCEEDINGS{Johnson2022,
+  author={Jack Johnson and Junayed Mahmud and Tyler Wendland and Kevin Moran and Julia Rubin and Mattia Fazzini},
+  abstract={One of the key tasks related to ensuring mobile app quality is the reporting, management, and resolution of bug reports. As such, researchers have committed considerable resources toward automating various tasks of the bug management process for mobile apps, such as reproduction and triaging. However, the success of these automated approaches is largely dictated by the characteristics and properties of the bug reports they operate upon. As such, understanding mobile app bug reports is imperative to drive the continued advancement of report management techniques. While prior studies have examined high-level statistics of large sets of reports, we currently lack an in-depth investigation of how the information typically reported in mobile app issue trackers relates to the specific details generally required to reproduce the underlying failures. In this paper, we perform an in-depth analysis of 180 reproducible bug reports systematically mined from Android apps on GitHub and investigate how the information contained in the reports relates to the task of reproducing the described bugs. In our analysis, we focus on three pieces of information: the environment needed to reproduce the bug report, the steps to reproduce (S2Rs), and the observed behavior. Focusing on this information, we characterize failure types, identify the modality used to report the information, and characterize the quality of the information within the reports. We find that bugs are reported in a multi-modal fashion, the environment is not always provided, and S2Rs often contain missing or non-specific enough information. These findings carry with them important implications on automated bug reproduction techniques as well as automated bug report management approaches more generally.},
+  booktitle={Proceedings of the 2022 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER'22)}, 
+  title={An Empirical Investigation into the Reproduction of Bug Reports for Android Apps},
+  year={2022},
+  location = {Honolulu, Hawaii},
+  volume={},
+  number={},
+  preview={saner2022_logo.png},
+  pdf={https://arxiv.org/abs/2301.01235},
+  code={https://github.com/se-umn/2022_saner_bug_report_reproduction_study}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@INPROCEEDINGS{Moran:SANER22,
+  author={Moran, Kevin and Yachnes, Ali and Purnell, George and Mahmud, Junayed and Tufano, Michele and Cardenas, Carlos Bernal and Poshyvanyk, Denys and H'Doubler, Zach},
+  abstract={Existing automated techniques for software documentation typically attempt to reason between two main sources of information: code and natural language. However, this reasoning process is often complicated by the lexical gap between more abstract natural language and more structured programming languages. One potential bridge for this gap is the Graphical User Interface (GUI), as GUIs inherently encode salient information about underlying program functionality into rich, pixel-based data representations. This paper offers one of the first comprehensive empirical investigations into the connection between GUIs and functional, natural language descriptions of software. First, we collect, analyze, and open source a large dataset of functional GUI descriptions consisting of 45,998 descriptions for 10,204 screenshots from popular Android applications. The descriptions were obtained from human labelers and underwent several quality control mechanisms. To gain insight into the representational potential of GUIs, we investigate the ability of four Neural Image Captioning models to predict natural language descriptions of varying granularity when provided a screenshot as input. We evaluate these models quantitatively, using common machine translation metrics, and qualitatively through a large-scale user study. Finally, we offer learned lessons and a discussion of the potential shown by multimodal models to enhance future techniques for automated software documentation.},
+  booktitle={Proceedings of the 2022 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER'22)}, 
+  title={An Empirical Investigation into the Use of Image Captioning for Automated Software Documentation}, 
+  year={2022},
+  location = {Honolulu, Hawaii},
+  volume={},
+  number={},
+  pages={514-525},
+  preview={saner2022_logo.png},
+  pdf={https://arxiv.org/abs/2301.01224},
+  html={https://sagelab.io/Clarity/}, 
+  code={https://github.com/SageSELab/Clarity}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{mahmud-etal-2021-code,
+    title = "Code to Comment Translation: A Comparative Study on Model Effectiveness {\&} Errors",
+    author = "Mahmud, Junayed  and
+      Faisal, Fahim  and
+      Arnob, Raihan Islam  and
+      Anastasopoulos, Antonios  and
+      Moran, Kevin",
+    editor = "Lachmy, Royi  and
+      Yao, Ziyu  and
+      Durrett, Greg  and
+      Gligoric, Milos  and
+      Li, Junyi Jessy  and
+      Mooney, Ray  and
+      Neubig, Graham  and
+      Su, Yu  and
+      Sun, Huan  and
+      Tsarfaty, Reut",
+    booktitle = "Proceedings of the 1st Workshop on Natural Language Processing for Programming (NLP4Prog'21)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.nlp4prog-1.1",
+    pages = "1--16",
+    location = {Bangkok, Thailand},
+    abstract = "Automated source code summarization is a popular software engineering research topic wherein machine translation models are employed to {``}translate{''} code snippets into relevant natural language descriptions. Most evaluations of such models are conducted using automatic reference-based metrics. However, given the relatively large semantic gap between programming languages and natural language, we argue that this line of research would benefit from a qualitative investigation into the various error modes of current state-of-the-art models. Therefore, in this work, we perform both a quantitative and qualitative comparison of three recently proposed source code summarization models. In our quantitative evaluation, we compare the models based on the smoothed BLEU-4, METEOR, and ROUGE-L machine translation metrics, and in our qualitative evaluation, we perform a manual open-coding of the most common errors committed by the models when compared to ground truth captions. Our investigation reveals new insights into the relationship between metric-based performance and model prediction errors grounded in an error taxonomy that can be used to drive future research efforts.",
+    preview={acl-logo.png},
+    pdf={https://arxiv.org/abs/2106.08415},
+    code={https://github.com/SageSELab/CodeSumStudy}
 }
+
+@article{Wendland2021,
+  title={Andror2: A Dataset of Manually-Reproduced Bug Reports for Android apps},
+  abstract={Software maintenance constitutes a large portion of the software development lifecycle. To carry out maintenance tasks, developers often need to understand and reproduce bug reports. As such, there has been increasing research activity coalescing around the notion of automating various activities related to bug reporting. A sizable portion of this research interest has focused on the domain of mobile apps. However, as research around mobile app bug reporting progresses, there is a clear need for a manually vetted and reproducible set of real-world bug reports that can serve as a benchmark for future work. This paper presents ANDROR2: a dataset of 90 manually reproduced bug reports for Android apps listed on Google Play and hosted on GitHub, systematically collected via an in-depth analysis of 459 reports extracted from the GitHub issue tracker. For each reproduced report, ANDROR2 includes the original bug report, an apk file for the buggy version of the app, an executable reproduction script, and metadata regarding the quality of the reproduction steps associated with the original report. We believe that the ANDROR2 dataset can be used to facilitate research in automatically analyzing, understanding, reproducing, localizing, and fixing bugs for mobile applications as well as other software maintenance activities more broadly.},
+  author={Tyler Wendland and Jingyang Sun and Junayed Mahmud and Syeda Mansur and Steven Huang and Kevin Moran and Julia Rubin and Mattia Fazzini},
+  journal={Proceedings of the 18th IEEE/ACM International Conference on Mining Software Repositories (MSR'21), Data Showcase Track},
+  year={2021},
+  location = {Madrid, Spain},
+  pages={600-604},
+  preview={msr2021_logo.png},
+  pdf={https://arxiv.org/abs/2106.08403},
+  code={https://github.com/se-umn/2022_saner_bug_report_reproduction_study}
+}
+
+@INPROCEEDINGS{chowdhury2018,
+  author={Chowdhury, Arnab Rahman and Mahmud, Junayed and Kamal, Abu Raihan Mostofa and Hamid, Md. Abdul},
+  booktitle={2018 IEEE Sensors Applications Symposium (SAS)}, 
+  title={MAES: Modified advanced encryption standard for resource constraint environments}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Encryption;Energy consumption;Ciphers;Standards;Sensors;AES;IoT;Energy Consumption;Resource Constraint Environments (RCEs);TelosB;Cryptography},
+  preview={sas2018_logo.png},
+  pdf={https://ieeexplore.ieee.org/document/8336747}}
