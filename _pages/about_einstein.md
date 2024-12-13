@@ -1,5 +1,10 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Code to Comment Translation: A Comparative Study on Model Effectiveness & Errors
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<div class="caption">
+	Presented in PProceedings of the First Workshop on Natural Language Processing for Programming (<a href="https://nlp4prog.github.io/2021/">NLP4Prog'21</a>), Co-Located with <a href="https://2021.aclweb.org">ACL-IJCNLP’21</a>, Virtual (originally Bangkok, Thailand), Aug 2021
+</div>
+<div class="row">
+    <div class="col-md-6" style="width: 80%; margin: 0 auto; text-align: center;">
+        {% include video.liquid path="https://www.youtube.com/embed/62fTyk2xokc" class="img-fluid rounded z-depth-10"  ontrols=true autoplay=true%}
+    </div>
+</div>
