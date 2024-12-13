@@ -28,10 +28,12 @@
       "startDate": "2023-08-21",
       "endDate": "Present",
       "summary": "Published 4 research papers",
-      "highlights": ["Utilized Large language models (LLMs) for graphical user interface (GUI)-based program repair",
+      "highlights": [
+        "Utilized Large language models (LLMs) for graphical user interface (GUI)-based program repair",
         "Assessed bug reproduction steps by mapping to the GUI elements utilizing LLMs and program analysis to provide feedback to bug reporters so that they can rewrite the steps if necessary",
         "Utilized LLMs for automatically generating assertions to validate the existence of diverse types of reported failures (i.e., crash and non-crash) in Android applications to aid in regression testing",
-        "Addressed the limitations of code-to-comment-translation models and generated improved software documentation using transformer-based models and contrastive learning"]
+        "Addressed the limitations of code-to-comment-translation models and generated improved software documentation using transformer-based models and contrastive learning"
+      ]
     },
     {
       "name": "George Mason University",
@@ -40,12 +42,14 @@
       "startDate": "2021-05-26",
       "endDate": "2023-08-20",
       "summary": "Published 6 research papers",
-      "highlights": ["Improved text-retrieval-based bug localization by leveraging GUI interaction data to mitigate the semantic gap between information in bug reports and code",
+      "highlights": [
+        "Improved text-retrieval-based bug localization by leveraging GUI interaction data to mitigate the semantic gap between information in bug reports and code",
         "Developed a program analysis tool that converts user-performed app actions into replayable scenarios and extracts detailed GUI information for automated testing and debugging",
         "Built a chatbot for bug reporting to improve report quality and studied the usability of the tool",
         "Analyzed the characteristics of diverse types of reproducible bug reports to build effective automated techniques for different bug report management activities",
         "Generated automated software documentation using visual software data encoded in GUIs by fine-tuning neural image captioning models",
-        "Characterized the shortcomings of code-to-comment-translation models without relying on existing reference-based metrics in order to address the shortcomings in developing new models"]
+        "Characterized the shortcomings of code-to-comment-translation models without relying on existing reference-based metrics in order to address the shortcomings in developing new models"
+      ]
     },
     {
       "name": "George Mason University",
@@ -54,8 +58,7 @@
       "startDate": "2019-08-26",
       "endDate": "2021-05-25",
       "summary": "Assisted in the following courses:",
-      "highlights": ["CS367 (Computer Systems and Programming)",
-        "CS222 (Computer Programming for Engineers)"]
+      "highlights": ["CS367 (Computer Systems and Programming)", "CS222 (Computer Programming for Engineers)"]
     },
     {
       "name": "Samsung R&D Institute Bangladesh Ltd.",
@@ -63,9 +66,11 @@
       "url": "https://research.samsung.com/srbd",
       "startDate": "2017-01-13",
       "endDate": "2019-03-14",
-      "highlights": ["Worked in an iOS application named SmartThings, designed to enable users to monitor and control smart electronic devices or appliances through their phones",
+      "highlights": [
+        "Worked in an iOS application named SmartThings, designed to enable users to monitor and control smart electronic devices or appliances through their phones",
         "Worked on developing the IoTivity architecture, which enables seamless communication between cloud services and consumer electronics devices",
-        "Developed multiple GUIs for the SmartThings project"]
+        "Developed multiple GUIs for the SmartThings project"
+      ]
     }
   ],
   "education": [
@@ -257,7 +262,7 @@
       "icon": "fa-solid fa-thumbtack",
       "reference": "University of Central Florida"
     },
-     {
+    {
       "name": "Assistant Professor Oscar Chaparro",
       "icon": "fa-solid fa-thumbtack",
       "reference": "College of William and Mary"

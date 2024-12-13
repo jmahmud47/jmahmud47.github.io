@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Automated Software Documentation from GUIs
-description: 
+description:
 img: assets/img/gui-documentation.jpg
 importance: 2
 category: work

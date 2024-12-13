@@ -2,10 +2,11 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: 
+description:
 nav: true
 nav_order: 6
 ---
+
 I worked as a teaching assistant in the following courses:
 
 <ul>

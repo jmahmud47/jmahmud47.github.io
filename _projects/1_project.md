@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Assessing Bug Report Quality
-description: 
+description:
 img: assets/img/bug-report-quality.jpg
 importance: 2
 category: work

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code to Comment Translation
-description: 
+description:
 img: assets/img/code-comment.jpg
 importance: 1
 category: work
@@ -14,4 +14,3 @@ Automated source code summarization is a popular software engineering research t
 <div class="publications">
   {% bibliography --group_by none --query @*[selected=code-comment]* %}
 </div>
-

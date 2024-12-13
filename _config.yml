@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Junayed
-middle_name: 
+middle_name:
 last_name: Mahmud
 email: junayed.mahmud@ucf.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -170,7 +170,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
   - name:
-    rss_url: 
+    rss_url:
   - name: Google Blog
     posts:
       - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/

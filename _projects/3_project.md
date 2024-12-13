@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Interactive Bug Reporting
-description: 
+description:
 img: assets/img/interactive_br.jpg
 importance: 1
 category: work

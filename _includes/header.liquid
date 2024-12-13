@@ -68,39 +68,39 @@
                   {% endif %}
                 {% endfor %}
                 <!--
-                <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    {{- p.title }}
-                    {% if page.title == p.title or has_active_child %}
-                      <span class="sr-only">(current)</span>
-                    {% endif %}
-                  </a>
-                  
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    {% for child in p.children %}
-                      {% if child.title == 'divider' %}
-                        <div class="dropdown-divider"></div>
-                      {% else %}
-                        <a
-                          class="dropdown-item {% if page.title == child.title %}active{% endif %}"
-                          href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
-                        >
-                          {{- child.title -}}
-                        </a>
+                  <li class="nav-item dropdown {% if page.title == p.title or has_active_child %}active{% endif %}">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      {{- p.title }}
+                      {% if page.title == p.title or has_active_child %}
+                        <span class="sr-only">(current)</span>
                       {% endif %}
-                    {% endfor %}
-                  </div>   
-                       
-                </li>
-                --> 
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      {% for child in p.children %}
+                        {% if child.title == 'divider' %}
+                          <div class="dropdown-divider"></div>
+                        {% else %}
+                          <a
+                            class="dropdown-item {% if page.title == child.title %}active{% endif %}"
+                            href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
+                          >
+                            {{- child.title -}}
+                          </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+
+                  </li>
+                -->
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
@@ -124,11 +124,11 @@
           {% if site.search_enabled %}
             <!-- Search -->
             <!--
-            <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
-              </button>
-            </li>
+              <li class="nav-item">
+                <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                  <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+                </button>
+              </li>
             -->
           {% endif %}
           {% if site.enable_darkmode %}
