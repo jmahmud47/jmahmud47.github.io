@@ -1,18 +1,16 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Junayed Mahmud",
+    "label": "PhD Candidate",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "junayed.mahmud@ucf.edu",
+    "url": "https://jmahmud47.github.io",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "L3Harris Engineering Center, HEC 249",
+      "postalCode": "32816",
+      "city": "Orlando",
       "countryCode": "US",
-      "region": "California"
+      "region": "Florida"
     },
     "profiles": [
       {
@@ -24,134 +22,211 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "University of Central Florida",
+      "position": "Graduate Research Assistant",
+      "url": "https://www.ucf.edu",
+      "startDate": "2023-08-21",
+      "endDate": "Present",
+      "summary": "Published 4 research papers",
+      "highlights": ["Utilized Large language models (LLMs) for graphical user interface (GUI)-based program repair",
+        "Assessed bug reproduction steps by mapping to the GUI elements utilizing LLMs and program analysis to provide feedback to bug reporters so that they can rewrite the steps if necessary",
+        "Utilized LLMs for automatically generating assertions to validate the existence of diverse types of reported failures (i.e., crash and non-crash) in Android applications to aid in regression testing",
+        "Addressed the limitations of code-to-comment-translation models and generated improved software documentation using transformer-based models and contrastive learning"]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "George Mason University",
+      "position": "Graduate Research Assistant",
+      "url": "https://www.gmu.edu",
+      "startDate": "2021-05-26",
+      "endDate": "2023-08-20",
+      "summary": "Published 6 research papers",
+      "highlights": ["Improved text-retrieval-based bug localization by leveraging GUI interaction data to mitigate the semantic gap between information in bug reports and code",
+        "Developed a program analysis tool that converts user-performed app actions into replayable scenarios and extracts detailed GUI information for automated testing and debugging",
+        "Built a chatbot for bug reporting to improve report quality and studied the usability of the tool",
+        "Analyzed the characteristics of diverse types of reproducible bug reports to build effective automated techniques for different bug report management activities",
+        "Generated automated software documentation using visual software data encoded in GUIs by fine-tuning neural image captioning models",
+        "Characterized the shortcomings of code-to-comment-translation models without relying on existing reference-based metrics in order to address the shortcomings in developing new models"]
+    },
+    {
+      "name": "George Mason University",
+      "position": "Graduate Teaching Assistant",
+      "url": "https://www.gmu.edu",
+      "startDate": "2019-08-26",
+      "endDate": "2021-05-25",
+      "summary": "Assisted in the following courses:",
+      "highlights": ["CS367 (Computer Systems and Programming)",
+        "CS222 (Computer Programming for Engineers)"]
+    },
+    {
+      "name": "Samsung R&D Institute Bangladesh Ltd.",
+      "position": "Software Engineer",
+      "url": "https://research.samsung.com/srbd",
+      "startDate": "2017-01-13",
+      "endDate": "2019-03-14",
+      "highlights": ["Worked in an iOS application named SmartThings, designed to enable users to monitor and control smart electronic devices or appliances through their phones",
+        "Worked on developing the IoTivity architecture, which enables seamless communication between cloud services and consumer electronics devices",
+        "Developed multiple GUIs for the SmartThings project"]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "University of Central Florida",
+      "location": "Orlando, Florida",
+      "url": "https://www.ucf.edu",
+      "area": "Studied Ph.D. in Computer Science at George Mason University from Aug 2019 to Aug 2023",
+      "studyType": "PhD in Computer Science",
+      "startDate": "2023-08-21",
+      "endDate": "Present"
+    },
+    {
+      "institution": "George Mason University",
+      "location": "Virginia, USA",
+      "url": "https://www.gmu.edu",
+      "studyType": "MS in Computer Science",
+      "startDate": "2019-08-26",
+      "endDate": "2023-05-15"
+    },
+    {
+      "institution": "Islamic University of Technology",
+      "location": "Dhaka, Bangladesh",
+      "url": "https://www.iutoic-dhaka.edu",
+      "studyType": "BS in Computer Science and Engineering",
+      "startDate": "2013-01-01",
+      "endDate": "2016-11-11"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "title": "Outstanding Graduate Creative Work Award",
+      "date": "2024-01",
+      "awarder": "University of Central Florida",
+      "url": "https://www.ucf.edu",
+      "summary": "This award is from UCF CECS for our paper entitled \"On Using GUI Interaction Data to Improve Text Retrieval-based Bug Localization\""
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "title": "Summer Research Initiation Award",
+      "date": "2020-05",
+      "awarder": "George Mason University",
+      "url": "https://www.gmu.edu",
+      "summary": "This award is from GMU CS department as an initial funding for research"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "title": "Icon of the Month",
+      "date": "2018-04",
+      "awarder": "Samsung R&D Institute Bangladesh Ltd.",
+      "url": "https://research.samsung.com/srbd",
+      "summary": "This award is given for contributing to the SmartThings project"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "title": "Professional level programmer at Samsung Electronics ",
+      "date": "2018-01",
+      "awarder": "Samsung R&D Institute Bangladesh Ltd.",
+      "url": "https://research.samsung.com/srbd",
+      "summary": "This award is given for passing the second-highest level in programming skill tests at Samsung Electronics"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Toward the Automated Localization of Buggy Mobile App UIs from Bug Descriptions",
+      "summary": "Antu Saha, Yang Song, Junayed Mahmud, Ying Zhou, Kevin Moran, and Oscar Chaparro",
+      "releaseDate": "2024-09",
+      "url": "https://arxiv.org/abs/2408.04075",
+      "publisher": "Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis, Vienna, Austria, pp. 1249-1261"
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "On Using GUI Interaction Data to Improve Text Retrieval-based Bug Localization",
+      "summary": "Junayed Mahmud, Nadeeshan De Silva, Safwat Ali Khan, Seyed Hooman Mostafavi, S M Hasan Mansur, Oscar Chaparro, Andrian (Andi) Marcus, and Kevin Moran",
+      "releaseDate": "2024-04",
+      "url": "https://arxiv.org/abs/2310.08083",
+      "publisher": "Proceedings of the 46th IEEE/ACM International Conference on Software Engineering (ICSE’24), Lisbon, Portugal, pp. 1-13"
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Toward Rapid Bug Resolution for Android Apps",
+      "publisher": "Proceedings of the 46th IEEE/ACM International Conference on Software Engineering, Doctoral Symposium Track, Lisbon, Portugal, pp. 237-241",
+      "releaseDate": "2024-04",
+      "url": "https://arxiv.org/abs/2312.15318",
+      "summary": "Junayed Mahmud"
+    },
+    {
+      "name": "Automating GUI-based Test Oracles for Mobile Apps",
+      "publisher": "Proceedings of the 21st International Conference on Mining Software Repositories (MSR’24), Lisbon, Portugal, pp. 309-321",
+      "releaseDate": "2024-04",
+      "url": "https://dl.acm.org/doi/10.1145/3643991.3644930",
+      "summary": "Kesina Baral, John Johnson, Junayed Mahmud, Sabiha Salma, Mattia Fazzini, Julia Rubin, Jeff Offutt, and Kevin Moran"
+    },
+    {
+      "name": "BURT: A Chatbot for Interactive Bug Reporting",
+      "publisher": "Proceedings of the 45th IEEE/ACM International Conference on Software Engineering (ICSE’23), Formal Tool Demonstrations Track, Melbourne, Australia, pp. 170-174",
+      "releaseDate": "2023-05",
+      "url": "https://arxiv.org/abs/2302.06050",
+      "summary": "Yang Song, Junayed Mahmud, Nadeeshan De Silva, Ying Zhou, Oscar Chaparro, Kevin Moran, Andrian Marcus, and Denys Poshyvanyk"
+    },
+    {
+      "name": "Toward Interactive Bug Reporting for (Android App) End-Users",
+      "publisher": "Proceedings of the 2022 ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, Singapore, pp. 344-356",
+      "releaseDate": "2022-11",
+      "url": "https://arxiv.org/abs/2209.10062",
+      "summary": "Yang Song, Junayed Mahmud, Ying Zhou, Oscar Chaparro, Kevin Moran, Andrian Marcus, and Denys Poshyvanyk"
+    },
+    {
+      "name": "An Empirical Investigation into the Reproduction of Bug Reports for Android Apps",
+      "publisher": "Proceedings of the 29th IEEE International Conference on Software Analysis, Evolution and Reengineering, Honolulu, Hawaii, pp. 321-332",
+      "releaseDate": "2022-03",
+      "url": "https://arxiv.org/abs/2301.01235",
+      "summary": "Jack Johnson, Junayed Mahmud, Tyler Wendland, Kevin Moran, Julia Rubin, and Mattia Fazzini"
+    },
+    {
+      "name": "An Empirical Investigation into the Use of Image Captioning for Automated Software Documentation",
+      "publisher": "Proceedings of the 29th IEEE International Conference on Software Analysis, Evolution and Reengineering, Honolulu, Hawaii, pp. 514-525",
+      "releaseDate": "2022-03",
+      "url": "https://arxiv.org/abs/2301.01224",
+      "summary": "Kevin Moran, Ali Yachnes, George Purnell, Junayed Mahmud, Michele Tufano, Carlos Bernal-Cárdenas, Denys Poshyvanyk, and Zach H'Doubler"
+    },
+    {
+      "name": "Code to Comment Translation: A Comparative Study on Model Effectiveness & Errors",
+      "publisher": "Proceedings of the First Workshop on Natural Language Processing for Programming, Co-located with ACL-IJCNLP’21, Bangkok, Thailand, pp. 1-16",
+      "releaseDate": "2021-08",
+      "url": "https://arxiv.org/abs/2106.08415",
+      "summary": "Junayed Mahmud, Fahim Faisal, Raihan Islam Arnob, Antonios Anastasopoulos, and Kevin Moran"
+    },
+    {
+      "name": "AndroR2: A Dataset of Manually Reproduced Bug Reports for Android Applications",
+      "publisher": "Proceedings of the 18th Conference on Mining Software Repositories, Data showcase track, Madrid, Spain, pp. 600-604",
+      "releaseDate": "2021-05",
+      "url": "https://arxiv.org/abs/2106.08403",
+      "summary": "Tyler Wendland, Jingyang Sun, Junayed Mahmud, S. M. Hasan Mansur, Steven Huang, Kevin Moran, Julia Rubin, and Mattia Fazzini"
+    },
+    {
+      "name": "MAES: Modified advanced encryption standard for resource constraint environments",
+      "publisher": "Proceedings of the 2018 IEEE Sensors Applications Symposium, Seoul, Korea (South), pp. 1–6",
+      "releaseDate": "2018-03",
+      "url": "https://ieeexplore.ieee.org/document/8336747",
+      "summary": "Arnab Rahman Chowdhury, Junayed Mahmud, Abu Raihan Mostofa Kamal, and Md. Abdul Hamid"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Programming Languages",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "keywords": ["Python", "Java", "C", "C++", "Swift", "Objective C", "Perl", "Kotlin", "JavaScript", "R", "MATLAB", "PHP", "HTML"]
+    },
+    {
+      "name": "Machine Learning",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Pytorch", "Tensorflow"]
+    },
+    {
+      "name": "Mobile Development",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Android", "iOS"]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Bengali",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -163,38 +238,43 @@
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Reserach Topics",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Software Engineering",
+        "Bug Reporting",
+        "Bug Localization",
+        "Program Repair",
+        "Automated Mobile Testing",
+        "Natural Language Processing for Software Engineering",
+        "Source Code Analysis"
       ]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Assistant Professor Kevin Moran",
+      "icon": "fa-solid fa-thumbtack",
+      "reference": "University of Central Florida"
+    },
+     {
+      "name": "Assistant Professor Oscar Chaparro",
+      "icon": "fa-solid fa-thumbtack",
+      "reference": "College of William and Mary"
     },
     {
-      "name": "Professor John Doe",
+      "name": "Professor Andrian Marcus",
       "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "George Mason University"
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Utilizing Graphical User Interfaces (GUIs) for Bug Localization",
+      "summary": "One of the most important tasks related to managing bug reports is localizing the fault so that a fix can be applied. As such, prior work has aimed to automate this task of bug localization by formulating it as an information retrieval problem, where potentially buggy files are retrieved and ranked according to their textual similarity with a given bug report. However, there is often a notable semantic gap between the information contained in bug reports and identifiers or natural language contained within source code files. For user-facing software, there is currently a key source of information that could aid in bug localization, but has not been thoroughly investigated - information from the GUI. We investigate the hypothesis that, for end user-facing applications, connecting information in a bug report with information from the GUI, and using this to aid in retrieving potentially buggy files, can improve upon existing techniques for bug localization. To examine this phenomenon, we conduct a comprehensive empirical study that augments four baseline techniques for bug localization with GUI interaction information from a reproduction scenario to (i) filter out potentially irrelevant files, (ii) boost potentially relevant files, and (iii) reformulate text-retrieval queries. To carry out our study, we source the current largest dataset of fully-localized and reproducible real bugs for Android apps, with corresponding bug reports, consisting of 80 bug reports from 39 popular open-source apps. Our results illustrate that augmenting traditional techniques with GUI information leads to a marked increase in effectiveness across multiple metrics, including a relative increase in Hits@10 of 13-18%. Additionally, through further analysis, we find that our studied augmentations largely complement existing techniques.",
+      "startDate": "2023-01",
+      "endDate": "2024-06",
+      "url": "https://arxiv.org/abs/2310.08083"
     }
   ]
 }
