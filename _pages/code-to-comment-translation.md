@@ -5,6 +5,6 @@ Code to Comment Translation: A Comparative Study on Model Effectiveness & Errors
 </div>
 <div class="row">
     <div class="col-md-6" style="width: 80%; margin: 0 auto; text-align: center;">
-        {% include video.liquid path="https://www.youtube.com/embed/62fTyk2xokc" class="img-fluid rounded z-depth-10"  ontrols=true autoplay=true%}
+        {% include video.liquid path="https://www.youtube.com/embed/62fTyk2xokc" class="img-fluid rounded z-depth-10"  controls=true autoplay=true%}
     </div>
 </div>
