@@ -2,7 +2,7 @@
 layout: page
 title: Automated Software Documentation from GUIs
 description:
-img: assets/img/gui-documentation.jpg
+img: assets/img/gui-documentation.webp
 importance: 2
 category: work
 related_publications: true

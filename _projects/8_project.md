@@ -2,7 +2,7 @@
 layout: page
 title: Code to Comment Translation
 description:
-img: assets/img/code-comment.jpg
+img: assets/img/code-comment.webp
 importance: 1
 category: work
 related_publications: true

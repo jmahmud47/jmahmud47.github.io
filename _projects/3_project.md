@@ -2,7 +2,7 @@
 layout: page
 title: Interactive Bug Reporting
 description:
-img: assets/img/interactive_br.jpg
+img: assets/img/interactive_br.webp
 importance: 1
 category: work
 related_publications: true

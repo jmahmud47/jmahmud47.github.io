@@ -2,7 +2,7 @@
 layout: page
 title: Automated Bug Localization
 description:
-img: assets/img/bug_localization.jpg
+img: assets/img/bug_localization.webp
 importance: 1
 category: work
 related_publications: true
