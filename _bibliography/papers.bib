@@ -6,14 +6,15 @@
 @inproceedings{mahmud2025ICPC,
 title={Combining Language and App UI Analysis for the Automated Assessment of Bug Reproduction Steps},
 author={Mahmud, Junayed and Saha, Antu and Chaparro, Oscar and Moran, Kevin and Marcus, Andrian (Andi)},
-abstract={Bug reports are essential for developers to confirm software problems, investigate their causes, and validate fixes. Unfortunately, reports often miss important information or are written unclearly, which can cause delays, extra issue resolution efforts, or even the inability to solve the issues. One of the often problematic components of reports is the steps to reproduce the bugs (S2Rs), which are essential to replicate the described bug(s) and reason about fixes. Given the proclivity for deficiencies in reported S2Rs, prior work has proposed techniques that assist reporters in writing S2Rs or assessing the quality of reported S2Rs. However, automated understanding of S2Rs is a challenging problem that requires linking nuanced natural language phrases with specific program information -- which prior techniques struggle with due to issues related to language variability and limitations of information gleaned from program analysis. Such challenges make it difficult to infer the language to program connections needed for S2R understanding.  
-
-To more effectively tackle the problem of S2R quality annotation, we propose a new technique called AstroBR, which leverages the language understanding capabilities of LLMs to identify and extract, the S2Rs from bug reports and match them to GUI interactions in a program state model gleaned from dynamic analysis. We compared AstroBR to a related state-of-the-art approach and we found that AstroBR annotates S2Rs 25.2% better (in terms of F1 score) than the baseline. 
-Additionally, AstroBR suggests more accurate missing S2Rs than the baseline (by 71.4% in terms of F1 score.).},
+abstract={Bug reports are essential for developers to confirm software problems, investigate their causes, and validate fixes. Unfortunately, reports often miss important information or are written unclearly, which can cause delays, increased issue resolution effort, or even the inability to solve issues. One of the most common components of reports that are problematic is the steps to reproduce the bug(s) (S2Rs), which are essential to replicate the described program failures and reason about fixes. Given the proclivity for deficiencies in reported S2Rs, prior work has proposed techniques that assist reporters in writing or assessing the quality of S2Rs. However, automated understanding of S2Rs is challenging, and requires linking nuanced natural language phrases with specific, semantically related program information. Prior techniques often struggle to form such language <--> program connections - due to issues in language variability and limitations of information gleaned from program analyses.
+To more effectively tackle the problem of S2R quality annotation, we propose a new technique called AstroBR, which leverages the language understanding capabilities of LLMs to identify and extract the S2Rs from bug reports and map them to GUI interactions in a program state model derived via dynamic analysis. We compared AstroBR to a related state-of-the-art approach and we found that AstroBR annotates S2Rs 25.2% better (in terms of F1 score) than the baseline. Additionally, AstroBR suggests more accurate missing S2Rs than the baseline (by 71.4% in terms of F1 score).},
 booktitle={Proceedings of the 33rd IEEE/ACM International Conference on Program Comprehension (ICPC'25)},
 year={2025},
 location = {Ottawa, Canada},
 preview={icpc2025_logo.png},
+pdf={https://arxiv.org/abs/2502.04251},
+code={https://github.com/sea-lab-wm/bug-report-quality-assessment-with-gpt},
+video={https://www.youtube.com/watch?v=v4AhvRzLnD4},
 selected={astrobr}
 }
 
@@ -43,6 +44,7 @@ location = {Lisbon, Portugal},
 preview={icse2024_logo.png},
 pdf={https://arxiv.org/abs/2310.08083},
 code={https://github.com/SageSELab/UI-Bug-Localization-Study},
+video={https://www.youtube.com/watch?v=epvlVK6ZcMw&t=1s},
 selected={project1}
 }
 
@@ -167,6 +169,7 @@ selected={interactive_br}
     preview={acl-logo.png},
     pdf={https://arxiv.org/abs/2106.08415},
     code={https://github.com/SageSELab/CodeSumStudy},
+    video={https://www.youtube.com/watch?v=62fTyk2xokc},
     selected={code-comment}
 }
 
