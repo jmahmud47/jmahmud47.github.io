@@ -15,4 +15,3 @@ To more effectively tackle the problem of S2R quality annotation, we propose a n
 <div class="publications">
   {% bibliography --group_by none --query @*[selected=astrobr]* %}
 </div>
-
