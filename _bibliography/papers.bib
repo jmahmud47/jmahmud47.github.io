@@ -3,6 +3,32 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{Johnson:ASE25,
+  author = {Johnson, Jack and Mahmud, Junayed and Chaparro, Oscar and Moran, Kevin and Fazzini, Mattia},
+  booktitle = {Proceedings of the 40th International Conference on Automated Software Engineering (ASE'25)},
+  pages = {262-273},
+  title = {Generating Failure-based Oracles to Support Testing of Reported Bugs in Mobile Apps},
+  abstract = {In the context of mobile apps, bug report management tasks have been shown to be among the most time-consuming and intellectually intensive software maintenance activities. As such, researchers have developed tools to automate the reproduction, validation, and localization of reported bugs. However, one complex, time-consuming, and important task that lacks automated support is the creation of test oracles for reported functional failures that manifest through the GUI. This is challenging task–requiring nuanced, multi-modal reasoning about bug descriptions, affected GUI components, and the characteristics of the related erroneous program state(s).
+
+  To explore the feasibility of automating this task, we conduct a empirical investigation into how the multi-modal (i.e., text and GUI-related code) reasoning capabilities of Large Language Models (LLMs) can be used to automatically generate assertion-based test oracles for non-crashing, functional failures described in Android app bug reports. Building upon the findings of this study, we construct and evaluate AndroB2O, an automated, LLM-based approach that, given a bug report and the GUI screen associated with the reported failure as inputs, generates failure-based oracles (FBOs) in the form of test assertions. The approach first identifies the GUI elements related to the failure and then defines assertions that aim to confirm the absence of the failure based on the elements’ properties. To evaluate AndroB2O, we create the first dataset of Android bug reports containing test cases with GUI interactions and test oracles that reveal reported failures. The results of our evaluation on 152 failures show that AndroB2O is able to generate FBOs that successfully identify the failure (and hence can confirm it’s absence) in 61.2% of the cases. We integrated AndroB2O with ReBL, a failure reproduction tool, to evaluate its effectiveness in automated generation of test cases complete with oracles for reported failures, and obtained promising results.},
+  year = {2025},
+  preview={ase_2025_logo.png}
+}
+
+@inproceedings{Mahmud:ICSME2025,
+author = {Junayed Mahmud and James Chen and Terry Achille and Camilo Alvarez-Velez and Darren Dean Bansil and Patrick Ijieh and Samar Karanch and Nadeeshan De Silva and Oscar Chaparro and Andrian Marcus and Kevin Moran},
+title = {LadyBug: A GitHub Bot for UI-Enhanced Bug Localization in Mobile Apps},
+abstract = {This paper introduces LadyBug, a GitHub bot that automatically localizes bugs for Android apps by combining UI interaction information with text retrieval. LadyBug connects to an Android app’s GitHub repository, and is triggered when a bug is reported in the corresponding issue tracker. Developers can then record a reproduction trace for the bug on a device or emulator and upload the trace to LadyBug via the GitHub issue tracker. This enables LadyBug to utilize both the text from the original bug description, and UI information from the reproduction trace to accurately retrieve a ranked list of files from the project that most likely contain the reported bug.
+We empirically evaluated LadyBug using an automated testing pipeline and benchmark called RedWing that contains 80 fully-localized and reproducible bug reports from 39 Android apps. Our results illustrate that LadyBug outperforms text-retrieval-based baselines and that the utilization of UI information leads to a substantial increase in localization accuracy. LadyBug is an open-source tool, available at https://github.com/LadyBugML/ladybug. A video showing the capabilities of Ladybug can be viewed here: https://youtu.be/hI3tzbRK0Cw},
+year = {2025},
+booktitle = {Proceedings of the 41st International Conference on Software Maintenance and Evolution},
+location = {Auckland, New Zealand},
+series = {ICSME 2025},
+pdf={https://www.arxiv.org/abs/2508.05085},
+code={https://github.com/LadyBugML/ladybug},
+preview={icmse2025_logo.png}
+}
+
 @inproceedings{mahmud2025ICPC,
 title={Combining Language and App UI Analysis for the Automated Assessment of Bug Reproduction Steps},
 author={Mahmud, Junayed and Saha, Antu and Chaparro, Oscar and Moran, Kevin and Marcus, Andrian (Andi)},
