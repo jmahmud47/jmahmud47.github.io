@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Interactive Bug Reporting
-description:
+description: A chatbot that guides app users to write high-quality bug reports.
 img: assets/img/interactive_br.webp
 importance: 1
 category: work

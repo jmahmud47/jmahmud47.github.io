@@ -84,6 +84,9 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Install ImageMagick 🖼️
+        # generates the responsive .webp images referenced by the site's srcset attributes
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade nbconvert

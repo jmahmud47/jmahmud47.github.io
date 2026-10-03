@@ -1,0 +1,23 @@
+/*******************************************************************************
+ * AI-generated summary videos on publication entries
+ ******************************************************************************/
+
+.publications ol.bibliography li .ai-video.hidden {
+  text-align: center;
+
+  video {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    margin: 0.75rem auto 0;
+    border-radius: 12px;
+    background: #000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+
+  .ai-video-note {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 0.75rem;
+    color: var(--global-text-color-light);
+  }
+}

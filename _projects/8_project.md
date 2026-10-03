@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code to Comment Translation
-description:
+description: Comparing code summarization models and the errors they make.
 img: assets/img/code-comment.webp
 importance: 1
 category: work

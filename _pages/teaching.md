@@ -7,11 +7,13 @@ nav: true
 nav_order: 6
 ---
 
-I worked as a teaching assistant in the following courses:
+I worked as a Graduate Teaching Assistant at <a href="https://www.gmu.edu">George Mason University</a> in the following courses:
 
-<ul>
-	<li><span class="label label-success">Spring 2021:</span> CS367 - Computer Systems and Programming</li>
-	<li><span class="label label-success">Fall 2020:</span> CS367 - Computer Systems and Programming</li>
-	<li><span class="label label-success">Spring 2020:</span> CS222 - Computer Programming for Engineers</li>
-	<li><span class="label label-success">Fall 2019:</span> CS222 - Computer Programming for Engineers</li>
-</ul>
+<table class="table table-sm table-borderless teaching-table">
+  <tbody>
+    <tr><th scope="row">Spring 2021</th><td>CS367 · Computer Systems and Programming</td></tr>
+    <tr><th scope="row">Fall 2020</th><td>CS367 · Computer Systems and Programming</td></tr>
+    <tr><th scope="row">Spring 2020</th><td>CS222 · Computer Programming for Engineers</td></tr>
+    <tr><th scope="row">Fall 2019</th><td>CS222 · Computer Programming for Engineers</td></tr>
+  </tbody>
+</table>

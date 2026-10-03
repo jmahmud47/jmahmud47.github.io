@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col col-sm-3 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -34,7 +34,7 @@
             include figure.liquid
             loading="eager"
             path=entry_path
-            sizes = "200px"
+            sizes = "240px"
             class="preview z-depth-1 rounded"
             zoomable=true
             alt=entry.preview
@@ -45,7 +45,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-9{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -157,6 +157,8 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
+    {% assign entrymonth = '' %}
+    {% assign entryyear = '' %}
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
@@ -226,6 +228,9 @@
         <a class="abstract btn btn-sm z-depth-0" role="button">Video</a>
       {% elsif entry.video %}
         <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+      {% endif %}
+      {% if entry.ai_video %}
+        <a class="ai-video btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</a>
       {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
@@ -355,7 +360,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
+      {% endhighlight %}
       </div>
     {% endif %}
 
@@ -363,6 +368,21 @@
       <!-- Hidden video block -->
       <div class="abstract hidden">
         <div style="text-align: center;">{% include video.liquid path=entry.video class="img-fluid rounded z-depth-1" controls=true %}</div>
+      </div>
+    {% endif %}
+
+    {% if entry.ai_video %}
+      <!-- Hidden AI summary video block -->
+      {% assign ai_video_path = entry.ai_video | prepend: '/assets/video/ai-summaries/' %}
+      <div class="ai-video hidden">
+        <video
+          src="{{ ai_video_path | append: '.mp4' | relative_url }}"
+          poster="{{ ai_video_path | append: '.jpg' | relative_url }}"
+          controls
+          preload="none"
+          playsinline
+        ></video>
+        <p class="ai-video-note">AI-generated summary: narration and visuals were generated with AI from the paper.</p>
       </div>
     {% endif %}
   </div>

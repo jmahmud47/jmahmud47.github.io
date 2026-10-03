@@ -8,14 +8,13 @@ middle_name:
 last_name: Mahmud
 email: junayed.mahmud@ucf.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Junayed Mahmud is a Research Engineer at Deloitte with a Ph.D. in Computer Science from the University of Central Florida. His research focuses on automated bug report management, bug localization, and UI-centric program repair.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Junayed Mahmud, software engineering, bug reporting, bug localization, program repair, Android, mobile apps, large language models # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://jmahmud47.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -351,6 +350,7 @@ filtered_bibtex_keywords:
     abbr,
     abstract,
     additional_info,
+    ai_video,
     altmetric,
     annotation,
     arxiv,
@@ -413,7 +413,7 @@ imagemagick:
     - ".pdf"
     - ".webp"
   output_formats:
-    webp: "-quality 85"
+    webp: "-quality 92"
 
 # Lazy loading images
 #   If you enable lazy loading, all images will add the loading="lazy" attribute.
@@ -678,8 +678,10 @@ jsonresume:
   - work
   - education
   - publications
+  - talks
   - projects
   - volunteer
+  - service
   - awards
   - certificates
   - skills

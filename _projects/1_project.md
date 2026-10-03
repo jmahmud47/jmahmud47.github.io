@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Assessing Bug Report Quality
-description:
+description: Using LLMs and app UI analysis to assess the quality of bug reproduction steps.
 img: assets/img/bug-report-quality.webp
 importance: 1
 category: work

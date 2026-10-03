@@ -3,33 +3,57 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{Mahmud:ISSTA2026,
+  month = {oct},
+  ai_video={issta26-apr-ui-bugs},
+  author = {Mahmud, Junayed and Pandey, Sparsh and De Silva, Nadeeshan and Dipongkor, Atish Kumar and Wu, Jingjing and Chaparro, Oscar and Fazzini, Mattia and Moran, Kevin},
+  title = {Automated Program Repair for UI-centric Android Bugs: How Far are We?},
+  abstract = {Substantial research effort has been devoted to developing techniques for automated program repair (APR) that suggest patches for localized buggy code – and more recent techniques have begun to leverage the capabilities of code-centric large language models (LLMs). However, the scope and diversity of bugs to which these techniques have historically been applied are limited. In particular, the research community currently lacks a comprehensive understanding of the performance of APR techniques on bugs that arise in UI-centric programs, such as mobile apps. Bugs in UI centric programs carry with them unique challenges, including (i) the need to reason across interconnected subroutines that connect presentation and program logic, (ii) event-driven programming paradigms, and (iii) the need to reason about program state through cues in the UI. In this paper, we investigate the effectiveness of existing APR techniques when applied to fix bugs in UI-centric programs – specifically Android applications. To explore this phenomenon, we conduct a comprehensive empirical study with five existing program repair techniques (including those that utilize LLMs) on a hybrid dataset including 46 synthetic bugs, generated via MDroid+, an Android-specific mutation tool, and 50 real bugs systematically mined from issue reports of 23 popular Android applications. Our findings illustrate important current limitations in resolving UI-related issues in mobile apps. We synthesize these results to form a taxonomy of the limitations of existing program repair techniques. This taxonomy outlines key limitations and can inform future research efforts in designing automated program repair tools for UI-centric bugs in mobile applications.},
+  booktitle = {Proceedings of the 35th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA'26)},
+  year = {2026},
+  location = {Oakland, California, USA},
+  preview={issta2026_logo.png},
+  pdf={https://dl.acm.org/doi/10.1145/3832272},
+  code={https://github.com/SageSELab/UI-Program-Repair},
+  selected={apr}
+}
+
 @inproceedings{Johnson:ASE25,
+  month = {nov},
+  ai_video={ase25-failure-based-oracles},
   author = {Johnson, Jack and Mahmud, Junayed and Chaparro, Oscar and Moran, Kevin and Fazzini, Mattia},
-  booktitle = {Proceedings of the 40th International Conference on Automated Software Engineering (ASE'25)},
-  pages = {262-273},
-  title = {Generating Failure-based Oracles to Support Testing of Reported Bugs in Mobile Apps},
+  booktitle = {Proceedings of the 40th IEEE/ACM International Conference on Automated Software Engineering (ASE'25)},
+  pages = {2196-2208},
+  title = {Generating Failure-Based Oracles to Support Testing of Reported Bugs in Android Apps},
   abstract = {In the context of mobile apps, bug report management tasks have been shown to be among the most time-consuming and intellectually intensive software maintenance activities. As such, researchers have developed tools to automate the reproduction, validation, and localization of reported bugs. However, one complex, time-consuming, and important task that lacks automated support is the creation of test oracles for reported functional failures that manifest through the GUI. This is challenging task–requiring nuanced, multi-modal reasoning about bug descriptions, affected GUI components, and the characteristics of the related erroneous program state(s).
 
   To explore the feasibility of automating this task, we conduct a empirical investigation into how the multi-modal (i.e., text and GUI-related code) reasoning capabilities of Large Language Models (LLMs) can be used to automatically generate assertion-based test oracles for non-crashing, functional failures described in Android app bug reports. Building upon the findings of this study, we construct and evaluate AndroB2O, an automated, LLM-based approach that, given a bug report and the GUI screen associated with the reported failure as inputs, generates failure-based oracles (FBOs) in the form of test assertions. The approach first identifies the GUI elements related to the failure and then defines assertions that aim to confirm the absence of the failure based on the elements’ properties. To evaluate AndroB2O, we create the first dataset of Android bug reports containing test cases with GUI interactions and test oracles that reveal reported failures. The results of our evaluation on 152 failures show that AndroB2O is able to generate FBOs that successfully identify the failure (and hence can confirm it’s absence) in 61.2% of the cases. We integrated AndroB2O with ReBL, a failure reproduction tool, to evaluate its effectiveness in automated generation of test cases complete with oracles for reported failures, and obtained promising results.},
   year = {2025},
-  preview={ase_2025_logo.png}
+  location = {Seoul, South Korea},
+  preview={ase_2025_logo.png},
+  pdf={https://ieeexplore.ieee.org/abstract/document/11334637}
 }
 
 @inproceedings{Mahmud:ICSME2025,
+  month = {sep},
+  ai_video={icsme25-ladybug},
 author = {Junayed Mahmud and James Chen and Terry Achille and Camilo Alvarez-Velez and Darren Dean Bansil and Patrick Ijieh and Samar Karanch and Nadeeshan De Silva and Oscar Chaparro and Andrian Marcus and Kevin Moran},
 title = {LadyBug: A GitHub Bot for UI-Enhanced Bug Localization in Mobile Apps},
 abstract = {This paper introduces LadyBug, a GitHub bot that automatically localizes bugs for Android apps by combining UI interaction information with text retrieval. LadyBug connects to an Android app’s GitHub repository, and is triggered when a bug is reported in the corresponding issue tracker. Developers can then record a reproduction trace for the bug on a device or emulator and upload the trace to LadyBug via the GitHub issue tracker. This enables LadyBug to utilize both the text from the original bug description, and UI information from the reproduction trace to accurately retrieve a ranked list of files from the project that most likely contain the reported bug.
 We empirically evaluated LadyBug using an automated testing pipeline and benchmark called RedWing that contains 80 fully-localized and reproducible bug reports from 39 Android apps. Our results illustrate that LadyBug outperforms text-retrieval-based baselines and that the utilization of UI information leads to a substantial increase in localization accuracy. LadyBug is an open-source tool, available at https://github.com/LadyBugML/ladybug. A video showing the capabilities of Ladybug can be viewed here: https://youtu.be/hI3tzbRK0Cw},
 year = {2025},
-booktitle = {Proceedings of the 41st International Conference on Software Maintenance and Evolution},
+booktitle = {Proceedings of the IEEE 41st International Conference on Software Maintenance and Evolution (ICSME'25), Tool Demonstration Track},
 location = {Auckland, New Zealand},
 series = {ICSME 2025},
 pdf={https://www.arxiv.org/abs/2508.05085},
 code={https://github.com/LadyBugML/ladybug},
-preview={icmse2025_logo.png}
+preview={icmse2025_logo.png},
+selected={project1}
 }
 
 @inproceedings{mahmud2025ICPC,
+  month = {apr},
+  ai_video={icpc25-astrobr},
 title={Combining Language and App UI Analysis for the Automated Assessment of Bug Reproduction Steps},
 author={Mahmud, Junayed and Saha, Antu and Chaparro, Oscar and Moran, Kevin and Marcus, Andrian (Andi)},
 abstract={Bug reports are essential for developers to confirm software problems, investigate their causes, and validate fixes. Unfortunately, reports often miss important information or are written unclearly, which can cause delays, increased issue resolution effort, or even the inability to solve issues. One of the most common components of reports that are problematic is the steps to reproduce the bug(s) (S2Rs), which are essential to replicate the described program failures and reason about fixes. Given the proclivity for deficiencies in reported S2Rs, prior work has proposed techniques that assist reporters in writing or assessing the quality of S2Rs. However, automated understanding of S2Rs is challenging, and requires linking nuanced natural language phrases with specific, semantically related program information. Prior techniques often struggle to form such language <--> program connections - due to issues in language variability and limitations of information gleaned from program analyses.
@@ -39,12 +63,14 @@ year={2025},
 location = {Ottawa, Canada},
 preview={icpc2025_logo.png},
 pdf={https://arxiv.org/abs/2502.04251},
-code={https://github.com/sea-lab-wm/bug-report-quality-assessment-with-gpt},
+code={https://github.com/sea-lab-wm/AstroBR-Bug-Reproduction-Steps-Assessment},
 video={https://www.youtube.com/watch?v=v4AhvRzLnD4},
 selected={astrobr}
 }
 
 @inproceedings{saha2024toward,
+  month = {sep},
+  ai_video={issta24-buggy-ui-localization},
 title={Toward the Automated Localization of Buggy Mobile App UIs from Bug Descriptions},
 author={Saha, Antu and Song, Yang and Mahmud, Junayed and Zhou, Ying and Moran, Kevin and Chaparro, Oscar},
 abstract={Bug report management is a costly software maintenance process comprised of several challenging tasks. Given the UI-driven nature of mobile apps, bugs typically manifest through the UI, hence the identification of buggy UI screens and UI components (Buggy UI Localization) is important to localizing the buggy behavior and eventually fixing it. However, this task is challenging as developers must reason about bug descriptions (which are often low-quality), and the visual or code-based representations of UI screens.
@@ -59,6 +85,8 @@ code={https://zenodo.org/records/12692994}
 }
 
 @inproceedings{Mahmud:ICSE2024,
+  month = {apr},
+  ai_video={icse24-gui-bug-localization},
 author = {Mahmud, Junayed and De Silva, Nadeeshan and Khan, Safwat Ali and Mostafavi, Seyed Hooman and Mansur, S M Hasan and Chaparro, Oscar and Marcus, Andrian (Andi) and Moran, Kevin},
 abstract = {One of the most important tasks related to managing bug reports is localizing the fault so that a fix can be applied. As such, prior work has aimed to automate this task of bug localization by formulating it as an information retrieval problem, where potentially buggy files are retrieved and ranked according to their textual similarity with a given bug report. However, there is often a notable semantic gap between the information contained in bug reports and identifiers or natural language contained within source code files. For user-facing software, there is currently a key source of information that could aid in bug localization, but has not been thoroughly investigated - information from the GUI.
 We investigate the hypothesis that, for end user-facing applications, connecting information in a bug report with information from the GUI, and using this to aid in retrieving potentially buggy files, can improve upon existing techniques for bug localization. To examine this phenomenon, we conduct a comprehensive empirical study that augments four baseline techniques for bug localization with GUI interaction information from a reproduction scenario to (i) filter out potentially irrelevant files, (ii) boost potentially relevant files, and (iii) reformulate text-retrieval queries. To carry out our study, we source the current largest dataset of fully-localized and reproducible real bugs for Android apps, with corresponding bug reports, consisting of 80 bug reports from 39 popular open-source apps. Our results illustrate that augmenting traditional techniques with GUI information leads to a marked increase in effectiveness across multiple metrics, including a relative increase in Hits@10 of 13-18%. Additionally, through further analysis, we find that our studied augmentations largely complement existing techniques.},
@@ -75,6 +103,8 @@ selected={project1}
 }
 
 @inproceedings{mahmud2024doctoral,
+  month = {apr},
+  ai_video={icse24-ds-rapid-bug-resolution},
 title={Toward Rapid Bug Resolution for Android Apps},
 author={Mahmud, Junayed},
 abstract={Bug reports document unexpected behaviors in software, enabling developers to understand, validate, and fix bugs. Unfortunately, a significant portion of bug reports is of low quality, which poses challenges for developers in terms of addressing these issues. Prior research has delved into the information needed for documenting high-quality bug reports and expediting bug report management. Furthermore, researchers have explored the challenges associated with bug report management and proposed various automated techniques. Nevertheless, these techniques exhibit several limitations, including a lexical gap between developers and reporters, difficulties in bug reproduction, and identifying bug locations. Therefore, there is a pressing need for additional efforts to effectively manage bug reports and enhance the quality of both desktop and mobile applications. In this paper, we describe the existing limitations of bug reports and identify potential strategies for addressing them. Our vision encompasses a future where the alleviation of these limitations and successful execution of our proposed new research directions can benefit both reporters and developers, ultimately making the entire software maintenance faster.},
@@ -87,6 +117,8 @@ pdf={https://arxiv.org/abs/2312.15318}
 }
 
 @inproceedings{Baral2024,
+  month = {apr},
+  ai_video={msr24-gui-test-oracles},
 author = {Baral, Kesina and Johnson, John and Mahmud, Junayed and Salma, Sabiha and Fazzini, Mattia and Rubin, Julia and Offutt, Jeff and Moran, Kevin},
 title = {Automating GUI-based Test Oracles for Mobile Apps},
 year = {2024},
@@ -108,6 +140,8 @@ code={https://github.com/SageSELab/Magneto}
 }
 
 @INPROCEEDINGS{song2023burt,
+  month = {may},
+  ai_video={icse23-burt},
 author={Song, Yang and Mahmud, Junayed and De Silva, Nadeeshan and Zhou, Ying and Chaparro, Oscar and Moran, Kevin and Marcus, Andrian and Poshyvanyk, Denys},
 abstract={This paper introduces BURT, a web-based chatbot for interactive reporting of Android app bugs. BURT is designed to assist Android app end-users in reporting high-quality defect information using an interactive interface. BURT guides the users in reporting essential bug report elements, i.e., the observed behavior, expected behavior, and the steps to reproduce the bug. It verifies the quality of the text written by the user and provides instant feedback. In addition, BURT provides graphical suggestions that the users can choose as alternatives to textual descriptions. We empirically evaluated BURT, asking end-users to report bugs from six Android apps. The reporters found that BURT's guidance and automated suggestions and clarifications are useful and BURT is easy to use.},
 booktitle={Proceedings of the 45th  IEEE/ACM International Conference on Software Engineering (ICSE'23), Formal Tool Demonstrations Track}, 
@@ -123,7 +157,9 @@ selected={interactive_br}
 }
 
 @inproceedings{song_toward_2022,
-  title        = {Toward interactive bug reporting for ({Android} app) end-users},
+  month = {nov},
+  ai_video={fse22-interactive-bug-reporting},
+  title        = {Toward Interactive Bug Reporting for ({Android} App) End Users},
   author       = {Song, Yang and Mahmud, Junayed and Zhou, Ying and Chaparro, Oscar and Moran, Kevin and Marcus, Andrian and Poshyvanyk, Denys},
   abstract = {Many software bugs are reported manually, particularly bugs that manifest themselves visually in the user interface. End-users typically report these bugs via app reviewing websites, issue trackers, or in-app built-in bug reporting tools, if available. While these systems have various features that facilitate bug reporting (e.g., textual templates or forms), they often provide limited guidance, concrete feedback, or quality verification to end-users, who are often inexperienced at reporting bugs and submit low-quality bug reports that lead to excessive developer effort in bug report management tasks. We propose an interactive bug reporting system for end-users (Burt), implemented as a task-oriented chatbot. Unlike existing bug reporting systems, Burt provides guided reporting of essential bug report elements (i.e., the observed behavior, expected behavior, and steps to reproduce the bug), instant quality verification, and graphical suggestions for these elements. We implemented a version of Burt for Android and conducted an empirical evaluation study with end-users, who reported 12 bugs from six Android apps studied in prior work. The reporters found that Burt's guidance and automated suggestions/clarifications are useful and Burt is easy to use. We found that Burt reports contain higher-quality information than reports collected via a template-based bug reporting system. Improvements to Burt, informed by the reporters, include support for various wordings to describe bug report elements and improved quality verification. Our work marks an important paradigm shift from static to interactive bug reporting for end-users.},
   year         = 2022,
@@ -136,9 +172,11 @@ selected={interactive_br}
 }
 
 @INPROCEEDINGS{Johnson2022,
+  month = {mar},
+  ai_video={saner22-bug-reproduction},
   author={Jack Johnson and Junayed Mahmud and Tyler Wendland and Kevin Moran and Julia Rubin and Mattia Fazzini},
   abstract={One of the key tasks related to ensuring mobile app quality is the reporting, management, and resolution of bug reports. As such, researchers have committed considerable resources toward automating various tasks of the bug management process for mobile apps, such as reproduction and triaging. However, the success of these automated approaches is largely dictated by the characteristics and properties of the bug reports they operate upon. As such, understanding mobile app bug reports is imperative to drive the continued advancement of report management techniques. While prior studies have examined high-level statistics of large sets of reports, we currently lack an in-depth investigation of how the information typically reported in mobile app issue trackers relates to the specific details generally required to reproduce the underlying failures. In this paper, we perform an in-depth analysis of 180 reproducible bug reports systematically mined from Android apps on GitHub and investigate how the information contained in the reports relates to the task of reproducing the described bugs. In our analysis, we focus on three pieces of information: the environment needed to reproduce the bug report, the steps to reproduce (S2Rs), and the observed behavior. Focusing on this information, we characterize failure types, identify the modality used to report the information, and characterize the quality of the information within the reports. We find that bugs are reported in a multi-modal fashion, the environment is not always provided, and S2Rs often contain missing or non-specific enough information. These findings carry with them important implications on automated bug reproduction techniques as well as automated bug report management approaches more generally.},
-  booktitle={Proceedings of the 2022 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER'22)}, 
+  booktitle={Proceedings of the 29th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER'22)}, 
   title={An Empirical Investigation into the Reproduction of Bug Reports for Android Apps},
   year={2022},
   location = {Honolulu, Hawaii},
@@ -150,9 +188,11 @@ selected={interactive_br}
 }
 
 @INPROCEEDINGS{Moran:SANER22,
+  month = {mar},
+  ai_video={saner22-image-captioning-documentation},
   author={Moran, Kevin and Yachnes, Ali and Purnell, George and Mahmud, Junayed and Tufano, Michele and Cardenas, Carlos Bernal and Poshyvanyk, Denys and H'Doubler, Zach},
   abstract={Existing automated techniques for software documentation typically attempt to reason between two main sources of information: code and natural language. However, this reasoning process is often complicated by the lexical gap between more abstract natural language and more structured programming languages. One potential bridge for this gap is the Graphical User Interface (GUI), as GUIs inherently encode salient information about underlying program functionality into rich, pixel-based data representations. This paper offers one of the first comprehensive empirical investigations into the connection between GUIs and functional, natural language descriptions of software. First, we collect, analyze, and open source a large dataset of functional GUI descriptions consisting of 45,998 descriptions for 10,204 screenshots from popular Android applications. The descriptions were obtained from human labelers and underwent several quality control mechanisms. To gain insight into the representational potential of GUIs, we investigate the ability of four Neural Image Captioning models to predict natural language descriptions of varying granularity when provided a screenshot as input. We evaluate these models quantitatively, using common machine translation metrics, and qualitatively through a large-scale user study. Finally, we offer learned lessons and a discussion of the potential shown by multimodal models to enhance future techniques for automated software documentation.},
-  booktitle={Proceedings of the 2022 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER'22)}, 
+  booktitle={Proceedings of the 29th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER'22)}, 
   title={An Empirical Investigation into the Use of Image Captioning for Automated Software Documentation}, 
   year={2022},
   location = {Honolulu, Hawaii},
@@ -167,6 +207,7 @@ selected={interactive_br}
 }
 
 @inproceedings{mahmud-etal-2021-code,
+  ai_video={acl21-code-to-comment},
     title = "Code to Comment Translation: A Comparative Study on Model Effectiveness {\&} Errors",
     author = "Mahmud, Junayed  and
       Faisal, Fahim  and
@@ -199,11 +240,13 @@ selected={interactive_br}
     selected={code-comment}
 }
 
-@article{Wendland2021,
-  title={Andror2: A Dataset of Manually-Reproduced Bug Reports for Android apps},
+@inproceedings{Wendland2021,
+  month = {may},
+  ai_video={msr21-andror2},
+  title={{AndroR2}: A Dataset of Manually-Reproduced Bug Reports for {Android} Apps},
   abstract={Software maintenance constitutes a large portion of the software development lifecycle. To carry out maintenance tasks, developers often need to understand and reproduce bug reports. As such, there has been increasing research activity coalescing around the notion of automating various activities related to bug reporting. A sizable portion of this research interest has focused on the domain of mobile apps. However, as research around mobile app bug reporting progresses, there is a clear need for a manually vetted and reproducible set of real-world bug reports that can serve as a benchmark for future work. This paper presents ANDROR2: a dataset of 90 manually reproduced bug reports for Android apps listed on Google Play and hosted on GitHub, systematically collected via an in-depth analysis of 459 reports extracted from the GitHub issue tracker. For each reproduced report, ANDROR2 includes the original bug report, an apk file for the buggy version of the app, an executable reproduction script, and metadata regarding the quality of the reproduction steps associated with the original report. We believe that the ANDROR2 dataset can be used to facilitate research in automatically analyzing, understanding, reproducing, localizing, and fixing bugs for mobile applications as well as other software maintenance activities more broadly.},
   author={Tyler Wendland and Jingyang Sun and Junayed Mahmud and SM Hasan Mansur and Steven Huang and Kevin Moran and Julia Rubin and Mattia Fazzini},
-  journal={Proceedings of the 18th IEEE/ACM International Conference on Mining Software Repositories (MSR'21), Data Showcase Track},
+  booktitle={Proceedings of the 18th IEEE/ACM International Conference on Mining Software Repositories (MSR'21), Data Showcase Track},
   year={2021},
   location = {Madrid, Spain},
   pages={600-604},
@@ -213,9 +256,12 @@ selected={interactive_br}
 }
 
 @INPROCEEDINGS{chowdhury2018,
+  month = {mar},
+  ai_video={sas18-maes},
   author={Chowdhury, Arnab Rahman and Mahmud, Junayed and Kamal, Abu Raihan Mostofa and Hamid, Md. Abdul},
-  booktitle={2018 IEEE Sensors Applications Symposium (SAS)}, 
-  title={MAES: Modified advanced encryption standard for resource constraint environments}, 
+  booktitle={Proceedings of the 2018 IEEE Sensors Applications Symposium (SAS'18)},
+  location = {Seoul, South Korea},
+  title={{MAES}: Modified Advanced Encryption Standard for Resource Constraint Environments}, 
   year={2018},
   volume={},
   number={},

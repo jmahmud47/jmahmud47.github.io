@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Automated Software Documentation from GUIs
-description:
+description: Generating functional descriptions of app screens with image captioning.
 img: assets/img/gui-documentation.webp
 importance: 2
 category: work

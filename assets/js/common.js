@@ -1,19 +1,42 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract, award and bibtex buttons
+  // add toggle functionality to abstract, award, bibtex and AI summary buttons
+  function closeAiVideo(entry) {
+    entry
+      .find(".ai-video.hidden.open")
+      .toggleClass("open")
+      .find("video")
+      .each(function () {
+        this.pause();
+      });
+  }
   $("a.abstract").click(function () {
     $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+    closeAiVideo($(this).parent().parent());
   });
   $("a.award").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+    closeAiVideo($(this).parent().parent());
   });
   $("a.bibtex").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
+    closeAiVideo($(this).parent().parent());
+  });
+  $("a.ai-video").click(function () {
+    const entry = $(this).parent().parent();
+    entry.find(".abstract.hidden.open").toggleClass("open");
+    entry.find(".award.hidden.open").toggleClass("open");
+    entry.find(".bibtex.hidden.open").toggleClass("open");
+    if (entry.find(".ai-video.hidden").hasClass("open")) {
+      closeAiVideo(entry);
+    } else {
+      entry.find(".ai-video.hidden").addClass("open");
+    }
   });
   $("a").removeClass("waves-effect waves-light");
 

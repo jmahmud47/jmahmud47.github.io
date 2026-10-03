@@ -1,0 +1,61 @@
+/*******************************************************************************
+ * Site polish: talks, project cards, teaching table
+ ******************************************************************************/
+
+// Talks: title, venue line, and a responsive 16:9 video
+.talk-title {
+  margin: 0.25rem 0 0.35rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.talk-meta {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+}
+
+.talk-video {
+  margin-bottom: 1.5rem;
+
+  figure {
+    margin: 0;
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+}
+
+// Project cards: compact titles, short descriptions, consistent image crop
+.projects .card {
+  .card-img-top {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+// Teaching: aligned term / course rows
+.teaching-table th {
+  width: 20%;
+  white-space: nowrap;
+  font-weight: 600;
+}
